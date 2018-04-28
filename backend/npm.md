@@ -24,6 +24,25 @@
     - Packages get into the registry by using the `npm publish` command
 - `npm dist-tag add <pkg>@<version> [<tag>]`
 
+- **Outdated**
+
+    - What do we do when someone else updates their package?
+        - The first step is to detect this. We can detect compatible releases programmtically with the `npm outdated` command
+
+**Update**
+- It's fine to explicitly check for outdated modules, and then run `npm install` to pull them in
+    - However, if you want ot be a bit more lazy about it, there's a special npm command that will update all of your deps to the max version you allow in your package.json
+    - That command is: `npm update`
+
+**Rm**
+- ` npm ls `: will print to stdout all the versions of packages that are installed, as well as their dependencies, in a tree-structure
+    - `npm rm @linclark/pkg`
+
+**finale**
+
+
+
+
 
 
 
